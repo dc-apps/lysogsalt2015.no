@@ -11,7 +11,8 @@
 angular
   .module('lysogsalt2015noApp', [
     'ngAnimate',
-    'ngRoute'
+    'ngRoute',
+    'timer'
   ])
   .config(function ($routeProvider) {
     $routeProvider
