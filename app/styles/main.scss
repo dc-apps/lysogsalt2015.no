@@ -77,7 +77,8 @@ header {
 
 section {
   position: relative;
-  padding:20px;
+  padding:15px 20px 40px 15px;
+  overflow:hidden;
   top:0;
   width: 100%;
   height: 50%;
@@ -88,6 +89,9 @@ section {
   }
   h1{
   	white-space: nowrap;
+  }
+  h5, p {
+  	text-align: left;
   }
 }
 
