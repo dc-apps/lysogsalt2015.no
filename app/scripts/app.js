@@ -12,18 +12,20 @@ angular
   .module('lysogsalt2015noApp', [
     'ngAnimate',
     'ngRoute',
+    'ngFx',
     'timer'
   ])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+        templateUrl: 'views/main.html'
       })
-      /*.when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl'
-      })*/
+      .when('/prices', {
+        templateUrl: 'views/prices.html'
+      })
+      .when('/signup', {
+        templateUrl: 'views/signup.html'
+      })
       .otherwise({
         redirectTo: '/'
       });
