@@ -81,7 +81,14 @@ section {
   top:0;
   width: 100%;
   height: 50%;
-  background: white;	
+  background: white;
+  span {
+  	display:inline-block;
+  	width:65px;
+  }
+  h1{
+  	white-space: nowrap;
+  }
 }
 
 .color2 {
