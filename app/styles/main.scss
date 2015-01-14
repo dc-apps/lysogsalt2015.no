@@ -75,7 +75,7 @@ header {
 
 section {
   position: relative;
-  padding:20px 40px 105px 40px;
+  padding:20px 0 105px 0;
   overflow:hidden;
   top:0;
   width: 100%;
@@ -89,27 +89,33 @@ section {
   	white-space: nowrap;
   	margin-bottom:$large;
   }
+}
 
-  article{
-  	@include columns(320px 2);
-  	margin-left:auto;
-  	margin-right:auto;
-  	max-width: 800px;
-  	h6{
-  		margin-top: $small;
-		margin-bottom:$tiny;
-  	}
-  	h6:first-child{
-  		margin-top:0;
-  	}
-  	p {
-  		text-align: left;
-  	}
-  	p:last-child{
-		margin-bottom:0;
-		padding-bottom:0;
-  	}
-  }
+article{
+	@include columns(320px 2);
+	@include column-gap(60px);
+	
+	width:320px;
+	padding-left: 0;
+	padding-right: 0;
+
+	margin-left:auto;
+	margin-right:auto;
+	text-align: left;
+	h6{
+		margin-top: $small;
+	margin-bottom:$tiny;
+	}
+	h6:first-child{
+		margin-top:0;
+	}
+	p {
+	@include column-break(inside, avoid)
+	}
+	p:last-child{
+	margin-bottom:0;
+	padding-bottom:0;
+	}
 }
 
 .color2 {
@@ -143,6 +149,12 @@ header{
 	div:last-child{
 		left:66.66%;
 	}
+}
+
+article{
+	padding-left: 100px;
+	padding-right:100px;
+	width:auto;
 }
 
 }
