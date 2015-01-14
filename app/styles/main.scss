@@ -103,14 +103,11 @@ article{
 	margin-right:auto;
 	text-align: left;
 	h6{
-		margin-top: $small;
+		margin-top: 0;
 	margin-bottom:$tiny;
 	}
-	h6:first-child{
-		margin-top:0;
-	}
 	p {
-	@include column-break(inside, avoid)
+		@include column-break(inside, avoid)
 	}
 	p:last-child{
 	margin-bottom:0;
@@ -155,6 +152,9 @@ article{
 	padding-left: 100px;
 	padding-right:100px;
 	width:auto;
+	p{
+		max-width: 400px;
+	}
 }
 
 }
