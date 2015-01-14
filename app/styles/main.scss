@@ -3,7 +3,7 @@
 
 // VARIABLES
 
-$dark: #392F92;
+$dark: #444;
 $tiny: 6px;
 $small: 12px;
 $large: 24px;
@@ -53,7 +53,8 @@ a:visited {
 }
 
 a:hover {
-    color: $dark;
+    color: white;
+    text-decoration: none
 }
 
 a:active {
@@ -153,7 +154,7 @@ article{
 	padding-right:100px;
 	width:auto;
 	p{
-		max-width: 400px;
+		max-width: 320px;
 	}
 }
 
