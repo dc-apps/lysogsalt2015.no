@@ -77,7 +77,7 @@ header {
 
 section {
   position: relative;
-  padding:15px 40px 105px 40px;
+  padding:20px 40px 105px 40px;
   overflow:hidden;
   top:0;
   width: 100%;
@@ -96,14 +96,13 @@ section {
   	width:320px;
   	margin-left:auto;
   	margin-right:auto;
-  	text-align: left;
   	overflow:scroll;
+  	p {
+  		text-align: left;
+  	}
   	p:last-child{
 		margin-bottom:0;
 		padding-bottom:0;
-  	}
-  	h5 {
-  		margin:0;
   	}
   }
 }
