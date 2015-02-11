@@ -46,14 +46,16 @@ h1 {
 
 a:link {
     color: $dark;
+    text-decoration: none
 }
 
 a:visited {
     color: $dark;
+    text-decoration: none
 }
 
 a:hover {
-    color: white;
+    color: $dark;
     text-decoration: none
 }
 
@@ -117,13 +119,13 @@ article{
 }
 
 .color2 {
-	background: #E3D1E6
+	background: #e3d8ea
 }
 .color3 {
-	background: yellow
+	background: #f45440
 }
 .color4 {
-	background: lime
+	background: #0ff
 }
 
 
